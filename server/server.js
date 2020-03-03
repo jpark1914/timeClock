@@ -12,5 +12,7 @@ app.listen(port, () => {
 
 // Middleware
 app.use(morgan());
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+
 export default app;
