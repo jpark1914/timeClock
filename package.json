@@ -2,9 +2,13 @@
   "name": "timeClock",
   "version": "1.0.0",
   "description": "timeClock",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel server/server.js -d dist",
+    "serve": "node dist/server.js",
+    "start": "npm run build && npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch src --exec npm start"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/jpark1914/timeClock/issues"
   },
-  "homepage": "https://github.com/jpark1914/timeClock#readme"
+  "homepage": "https://github.com/jpark1914/timeClock#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  }
 }
