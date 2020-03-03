@@ -1,0 +1,20 @@
+{
+  "name": "timeClock",
+  "version": "1.0.0",
+  "description": "timeClock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpark1914/timeClock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpark1914/timeClock/issues"
+  },
+  "homepage": "https://github.com/jpark1914/timeClock#readme"
+}
