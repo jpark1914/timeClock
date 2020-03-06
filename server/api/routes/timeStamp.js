@@ -9,9 +9,11 @@ router.get('/', async (req, res) =>{
 
 router.post('/:id', (req, res) => {
     TimeStamp.create({
-        timeIn: req.body.timeIn
+        timeIn: req.body.timeIn,
+        timeOut: req.body.timeOut,
+        hoursWorked: req.body.hoursWorked
     })
-    .then(timesIn => res.json(timesIn))
+    .then(time => res.json(time))
 })
 
 module.exports = router;
