@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Person, TimeStamp} = require('../../sequelize');
+const {Person} = require('../../sequelize');
 
 //Persons
 router.get('/', async (req, res) =>{

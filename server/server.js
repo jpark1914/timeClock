@@ -9,8 +9,8 @@ app.use(bodyParser.json())
 const person = require('./api/routes/person');
 app.use('/api/person', person);
 
-
-
+const timeStamp = require('./api/routes/timeStamp')
+app.use('/api/timeStamp', timeStamp)
 
 const port = 3000
 app.listen(port, () => {

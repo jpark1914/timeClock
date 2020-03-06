@@ -5,9 +5,17 @@ module.exports = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true
         },
-        time: {
+        timeIn: {
             type: type.TIME,
-            allowNull: false
+            allowNull: true
+        },
+        timeOut: {
+            type: type.TIME,
+            allowNull: true
+        },
+        hoursWorked: {
+            type: type.INTEGER,
+            allowNull: true
         }
     })
 }
